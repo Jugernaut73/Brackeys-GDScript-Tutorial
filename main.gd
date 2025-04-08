@@ -1,14 +1,14 @@
 extends Node
 
+var health = 100
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	$Label.text = "Hello, world!"
-	$Label.modulate = Color.GREEN
-	
 func _input(event):
 	if event.is_action_pressed("my_action"):
-		$Label.modulate = Color.RED
+		health -=  20
+		print(health)
 		
-	if event.is_action_released("my_action"):
-		$Label.modulate = Color.GREEN
+		if health <= 0:
+			health = 0
+			print("YOU DIED!")
+
