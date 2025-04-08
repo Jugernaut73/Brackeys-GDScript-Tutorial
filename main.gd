@@ -1,16 +1,7 @@
 extends Node
 
-var health = 100
-
-func _input(event):
-	if event.is_action_pressed("my_action"):
-		health -=  20
-		print(health)
-		
-		if health <= 0:
-			health = 0
-			print("YOU DIED!")
-		elif health < 50:
-			print("YOU ARE INJURED!")
-		else:
-			print("YOU ARE HEALTHY.")
+func _ready():
+	# This is a comment about the code that follows
+	#print("Hello, world!") # This is a comment about this line only
+	#print("I'm not sure about this...")
+	pass
