@@ -4,4 +4,5 @@
 
 [node name="Main" type="Node"]
 script = ExtResource("1_y4ft8")
-unit_alignment = -1
+
+[node name="Player" type="Node2D" parent="."]
